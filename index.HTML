@@ -15,19 +15,26 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
       <h1>New York</h1>
       <ul>
         <li>Friday 20:00</li>
         <li>Clear</li>
       </ul>
+      </div>
       <div class="row">
         <div class="col-6">
+          <div class="weather-temperature">
+          <div class="d-flex weather-temperature">
           <img
             src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/ClearNightV3.svg"
-            alt="clear"
+            alt="clear" id="icon"
           />
-          12°F | °C
+          <strong>12</strong><span class="units">°F | <a href="#"> °C </a></span> 
+        </div>
+        </div>
         </div>
         <div class="col-6">
           <ul>
@@ -36,10 +43,11 @@
             <li>Wind: 2mph</li>
           </ul>
         </div>
-         <small>
+      </div>
+      </div>
+        <small>
           <a href="https://github.com/Chappy201656/Vanilla-Weather-App" target="_blank">Open-source-code</a> by Brittany Chapman
         </small>
-      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

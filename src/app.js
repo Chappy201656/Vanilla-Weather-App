@@ -29,8 +29,19 @@ function displayTemperature(response) {
     iconElement.setAttribute("src", `http://openweathermap.org/img/w/${response.data.condition.icon}.png`);
 }
 
+function search(city) {
 let apiKey = "o33e843f19cff60d65295cbta82c21ed";
-let city = "Sydney"
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
-
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

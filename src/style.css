@@ -39,6 +39,27 @@ body {
     text-decoration: none;
 }
 
+.weather-forecast {
+    margin-top: 25px;
+    text-align: center;
+    color: #000;
+
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.weather-forecast-temp {
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.weather-forecast-temp-min {
+    opacity: 0.5;
+}
+
 h1 {
 color: #878787;
 font-size: 24px;
